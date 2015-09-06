@@ -8,7 +8,7 @@ title: 爱江山更爱好身材
 subtitle: 
 email: askhuoqian@163.com
 name: Rebecca
-description:  
+description: 霍仟 博客 点团队 仟言万语 健身 腾讯  
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://askhuoqian.com" # the base hostname & protocol for your site
 cover: "assets/header_image.jpg"
@@ -16,7 +16,7 @@ logo: "assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 10
+paginate: 5
 paginate_path: "/page:num/"
 permalink: /:year/:month/:day/:title/
 
@@ -38,14 +38,17 @@ disqus_shortname: bencentra
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: "职场" 
+  - cat: "Career" 
     desc: "只有非常努力，才能看起来毫不费力"
 
-  - cat: "健身"
+  - cat: "Fitness"
     desc: "连自己的身材都控制不好的人，何以取天下"
 
-  - cat: "修养"
+  - cat: "Life"
     desc: "紫菜包饭都是99%的米饭+1%的刺身"
+
+  - cat: "Opinions"
+    desc: "仅代表个人立场"
 
 # Social icons and sharing options
 #
