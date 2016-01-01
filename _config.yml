@@ -20,6 +20,9 @@ paginate: 5
 paginate_path: "/page:num/"
 permalink: /:year/:month/:day/:title/
 
+# Pagination
+gems: [jekyll-paginate]
+
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives: 
   enabled: 
