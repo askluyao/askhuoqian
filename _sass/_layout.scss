@@ -90,7 +90,7 @@ pre code.hljs {
 			background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
 			@include media($tablet) {
-				padding: 9em 1em !important;
+				padding: 8em 1em !important;
 			}
 		}
 	}
@@ -235,7 +235,7 @@ pre code.hljs {
 		background-color: $highlight-color;
 		.site-header{
 			.title {
-				font-size: modular-scale(6);
+				font-size: modular-scale(8);
 			}
 			.subtitle {
 				font-style: italic;
@@ -246,7 +246,6 @@ pre code.hljs {
 	img {
 		display: block;
 		margin: auto;
-		width: 90%;
 	}
 	/*
 	*	Posts
