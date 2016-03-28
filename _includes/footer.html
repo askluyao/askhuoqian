@@ -5,44 +5,48 @@
     <h3 class="footer-heading">{{ site.title }}</h3>
 
     <div class="site-navigation">
-    	
-    	<p><strong>Site Map</strong></p>
+      
+      <p><strong>网站地图</strong></p>
       <ul class="pages">
+        <!--
         {% for page in site.pages %}
         {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl }}">{{ page.title }}</a>
+          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         {% endif %}
         {% endfor %}
+        -->
+        <li class="nav-link"><a href="/posts/">所有文章</a>
+        <li class="nav-link"><a href="/about/">关于我</a>
       </ul>
     </div>
 
     <div class="site-contact">
 
-    	<p><strong>Contact</strong>
+      <p><strong>联系方式</strong></p>
       <ul class="social-media-list">
-      	<li>
-      		<a href="mailto:{{ site.email }}">
-	      		<i class="fa fa-envelope-o"></i>
-	      		<span class="username">{{ site.email }}</span>
-      		</a>
-      	</li>
-
-      	{% for social in site.social %}
-      	{% if social.url != null %}
-      	<li>
-          <a href="{{ social.url }}" title="{{ social.desc }}">
-            <i class="fa fa-{{ social.icon }}"></i>
-            <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
+        <li>
+          <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">{{ site.email }}</span>
           </a>
         </li>
-      	{% endif %}
-      	{% endfor %}
+
+        {% for social in site.social %}
+          {% if social.url != null %}
+          <li>
+            <a href="{{ social.url }}" title="{{ social.desc }}">
+              <i class="fa fa-{{ social.icon }}"></i>
+              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
 
       </ul>
     </div>
 
     <div class="site-signature">
-    	<p class="rss-subscribe text"><strong>Subscribe <a href="{{ "feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
+      <p class="rss-subscribe text"><strong>通过 <a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS</a></strong> 订阅本站文章</p>
       <p class="text">{{ site.description }}</p>
     </div>
 
@@ -51,17 +55,24 @@
 </footer>
 
 <!-- Scripts -->
+<!--
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+-->
+
+<script src="/assets/jquery-1.11.2.min.js"></script>
+<script src="/assets/highlight.min.js"></script>
+<script src="/assets/lightbox.min.js"></script>
+
 <script>
 
 $(document).ready(function() {
 
-	// Syntax highlighting
-	hljs.initHighlightingOnLoad();
+  // Syntax highlighting
+  hljs.initHighlightingOnLoad();
 
-	// Header
+  // Header
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
   menuToggle.on('click', function(e) {
@@ -87,8 +98,8 @@ $(document).ready(function() {
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', '{{ site.ga_tracking_id }}', 'auto');
   ga('send', 'pageview', {
-  	'page': '{{ page.url }}',
-  	'title': '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'
+    'page': '{{ page.url }}',
+    'title': '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'
   });
 </script>
 {% endif %}
