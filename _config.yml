@@ -51,6 +51,9 @@ descriptions:
   - cat: "Career" 
     desc: "只有非常努力，才能看起来毫不费力"
 
+  - cat: "Business"
+    desc: "不能买买买的人生，不值得一过"
+
   - cat: "Fitness"
     desc: "连自己的身材都控制不好的人，何以取天下"
 
