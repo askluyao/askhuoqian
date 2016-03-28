@@ -3,7 +3,7 @@ layout: post
 title:  颠覆来自边缘化创新
 date:   2015-10-11 16:01
 author: Rebecca
-categories: Opinions
+categories: Opinions Career
 ---
 
 凯文凯利说，创新来自前沿和边缘。小而美也有可能战胜大而全。
