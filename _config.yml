@@ -20,7 +20,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://askhuoqian.com" # the base hostname & protocol for your site
 cover: "//7xlj9s.com1.z0.glb.clouddn.com/header_image.jpg"
-logo: "/assets/logo.png"
+logo: "//7xlj9s.com1.z0.glb.clouddn.com/logo.png"
 
 # Build settings
 markdown: kramdown
